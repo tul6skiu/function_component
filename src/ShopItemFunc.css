@@ -67,7 +67,7 @@ h3 {
       -ms-flex-flow: column;
           flex-flow: column;
 
-  outline: 5px dashed #cb4646; /* пунктирная рамка внутри */
+  outline: 4px dashed #cb4646; /* пунктирная рамка внутри */
   outline-offset: -15px;
 }
 
