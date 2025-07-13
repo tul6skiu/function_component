@@ -1,7 +1,20 @@
 import React from 'react';
 import './ShopItemFunc.css';
 
-const ShopItemFunc = ({ item }) => {
+interface Item {
+  brand: string;
+  title: string;
+  description: string;
+  descriptionFull: string;
+  price: number;
+  currency: string;
+}
+
+interface ShopItemFuncProps {
+  item: Item;
+}
+
+function ShopItemFunc({ item }: ShopItemFuncProps) {
   return (
     <div className="main-content">
       <h2>{item.brand}</h2>
@@ -14,6 +27,5 @@ const ShopItemFunc = ({ item }) => {
       </div>
     </div>
   );
-};
-
+}
 export default ShopItemFunc;
